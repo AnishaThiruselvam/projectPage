@@ -3,7 +3,7 @@
   <head>
     <!-- Created by Anisha Thiruselvam on March 24th, 2025 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio: projectsPage</title>
+    <title>Portfolio: projectPage</title>
 
     <!-- fonts: italianno (h1), kalina (h2), oswald (h3), kanit (p) -->
     <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Kalnia:wght@100..700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
@@ -30,6 +30,7 @@ Date retrieved: 26th March 2025
         font-family: "Italianno", cursive;
         font-weight: 500;
         font-style: normal;
+        line-height: 0.01;
       }
 
       h2 {
@@ -44,7 +45,7 @@ Date retrieved: 26th March 2025
         font-family: "Oswald", sans-serif;
         font-weight: 400;
         font-style: normal;
-        font-size: 25px;
+        font-size: 12px;
         letter-spacing: 4px;
         position: absolute;
       }
@@ -53,35 +54,35 @@ Date retrieved: 26th March 2025
         font-family: "Kanit", sans-serif;
         font-weight: 300;
         font-style: normal;
-        font-size: 25px
-      }
-      
-      #mainSection h2 {
-        color: #E6D7C4; 
-        position: relative; 
-        top: 120px; 
-        text-align: center; 
-        font-size: 80px;
-      }
-      
-      #mainSection h1 {
-        color: white; 
-        position: relative; 
-        top: -135px; 
-        text-align: center; 
-        font-size: 300px;
-      }
-      
-      #mainSection p {
-        color: #583322; 
-        position: relative; 
-        top: -270px; 
-        text-align: center
+        font-size: 15px
       }
 
+
+      #mainSection h2 {
+        color: #E6D7C4;
+        position: relative;
+        top: 40px;
+        text-align: center;
+        font-size: 60px;
+      }
+
+      #mainSection h1 {
+        color: white;
+        position: relative;
+        top: -10px;
+        text-align: center;
+        font-size: 250px;
+      }
+
+      #mainSection p {
+        color: #583322;
+        position: relative;
+        top: 0px;
+        text-align: center
+      }
       #backdrop {
         width: 100%;
-        height: 700px;
+        height: 500px;
         position: absolute;
         top: 0;
         right: 0;
@@ -92,12 +93,12 @@ Date retrieved: 26th March 2025
         border: none;
         background-color: #E6D7C4;
         color: #583322;
-        padding: 15px 40px;
+        padding: 5px 20px;
         text-align: center;
         margin: 15px 20px;
         cursor: pointer;
         border-radius: 50px;
-        font-size: 25px;
+        font-size: 15px;
 
         font-family: "Kanit", sans-serif;
         font-weight: 400;
@@ -108,12 +109,12 @@ Date retrieved: 26th March 2025
         border: none;
         background-color: #583322;
         color: #E6D7C4;
-        padding: 15px 40px;
+        padding: 5px 20px;
         text-align: center;
         margin: 15px 20px;
         cursor: pointer;
         border-radius: 50px;
-        font-size: 25px;
+        font-size: 15px;
 
         font-family: "Kanit", sans-serif;
         font-weight: 400;
@@ -127,76 +128,98 @@ Date retrieved: 26th March 2025
 
       .button1 {
         position: fixed;
-        top: 20px;
+        top: 0px;
       }
 
       #header {
         width: 100%;
-        height: 120px;
+        height: 60px;
         position: fixed;
         top: 0;
         right: 0;
         background-color: #E6D7C4;
       }
-   
       #footer {
         width: 100%;
-        height: 90px;
+        height: 80px;
         position: absolute;
-
         right: 0;
-        background-color: #583322;
         text-align: center;
-        color: #E6D7C4; 
-        line-height: 50px; 
+        color: #583322; 
+        line-height: 60px; 
+      }
+
+      /*images row 1*/
+      * {
+        box-sizing: border-box;
+      }
+
+      /*images row 2*/
+      .column1 {
+        float: left;
+        width: 50%;
+        height: auto;
+        padding: 10px;
+        
+        color: #583322;
+        position: relative;
+        text-align: justify;
+      }
+
+      .row1::after {
+        content: "";
+        clear: both;
+        display: table;
       }
 
     </style>
   </head>
   <body>
+
     <!--main section and backcolor-->
     <div id="backdrop"> </div>
 
     <div id="mainSection">
-    <h2>some of my</h2>
-    <h1>projects</h1>
-    <p>Here you’ll find a selection of my work. Explore my passion projects!</p>
+      <h2>some of my</h2>
+      <h1>projects</h1>
     </div>
 
-    <!--images (row 1)-->
-    <div>
-        <img src="headphones.png" alt="painting of headphones with an analogous color scheme" style="width:100%">
+    
+    <!--images (row 2)
+
+CanTALKphone.png
+aussieDisplay.png
+high-fidelityCAN.png
+webScreen.png-->
+    <div class="row1">
+      <div class="column1">
+        <h1 style="font-size: 200px; font-weight: 400px;">aussie</h1>
+        <p>For this project, my partner and I were tasked to pick a brand that we were interested in redesigning. My partner and I chose to redesign Aussie, made changes to the logo and its colours, the packaging, and merch, and presented some social media strategies the company could use to expand their online reach. <br> <a href="https://www.youtube.com/watch?v=uaUDrdTSxFI&feature=youtu.be">Click here to watch the YouTube AD </a>
+        </p>
       </div>
-      <div class="column">
-        <img src="Nandipainting.png" alt="a 4 canvas Nandi painting with differing color schemes" style="width:100%">
+      <div class="column1">
+        <img src="aussieDisplay.png" alt="a 4 canvas Nandi painting with differing color schemes" style="width:100%">
       </div>
-      <div class="column">
-        <img src="tamilgirl1.png" alt="an acrylic painting of a South Indian girl standing peacefully between a cow and a tiger" style="width:100%">
-      </div>
+    </div>
 
 
     <!--footer-->
     <div id="footer">
-      <p>© 2025 Anisha Thiruselvam. All Rights Reserved.</p></div>
-    
+      <p>© 2025 Anisha Thiruselvam. All Rights Reserved.</p>
+    </div>
+
     <!--Header-->
     <div id="header">
       <a href="https://anishathiruselvam.github.io/contactUs/">
-        <button class="button button1" style="right: 20px;">contact me</button>
-      </a>
+        <button class="button button1" style="right: 10px;">contact me</button></a>
       <a href="https://anishathiruselvam.github.io/playgroundPage/">
-        <button class="buttonClicked button1" style="right: 300px;">playground</button>
-      </a>
-      <a href="https://anishathiruselvam.github.io/projectPage/">
-        <button class="button button1" style="right: 580px;">projects</button>
-      </a>
+        <button class="button button1" style="right: 120px;">playground</button></a>
+      <a href="https://anishathiruselvam.github.io/projectsPage/">
+        <button class="buttonClicked button1" style="right: 260px;">projects</button></a>
       <a href="https://anishathiruselvam.github.io/MainPage/">
-        <button class="button button1" style="right: 810px;">home</button>
-      </a>
-      <h3 style="color:#583322; left: 40px">
-        ANISHA<br>THIRUSELVAM
-      </h3>
+        <button class="button button1" style="right: 400px;">home</button></a>
 
+      <h3 style="color:#583322; left: 40px">ANISHA<br>THIRUSELVAM</h3>
     </div>
   </body>
 </html>
